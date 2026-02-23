@@ -1,0 +1,12 @@
+nmae: Display Message on push
+
+on: 
+   push:
+
+jobs:
+     show-message:
+       runs-no: ubuntu-latest
+
+       steps:
+            name: Print Message
+            run: echo "Push detected. CI is running!"
